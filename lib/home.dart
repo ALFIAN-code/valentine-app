@@ -430,14 +430,17 @@ class DecorationImage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      height: 300,
-      width: 200,
-      clipBehavior: Clip.hardEdge,
-      decoration: BoxDecoration(borderRadius: BorderRadius.circular(20)),
-      child: Image.asset(
-        imagePath,
-        fit: BoxFit.cover,
+    return RotationTransition(
+      turns: AlwaysStoppedAnimation(degree / 360),
+      child: Container(
+        height: 300,
+        width: 200,
+        clipBehavior: Clip.hardEdge,
+        decoration: BoxDecoration(borderRadius: BorderRadius.circular(20)),
+        child: Image.asset(
+          imagePath,
+          fit: BoxFit.cover,
+        ),
       ),
     );
   }

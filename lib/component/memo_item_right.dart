@@ -16,7 +16,7 @@ class MemoItemRight extends StatelessWidget {
 
   PaletteGenerator? paletteGenerator;
 
-  Color defaultColor = Color.fromARGB(255, 182, 0, 127);
+  Color defaultColor = Color.fromARGB(255, 255, 88, 205);
 
   @override
   Widget build(BuildContext context) {
