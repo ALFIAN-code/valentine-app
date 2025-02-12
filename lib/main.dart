@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
       alignment: Alignment.center,
       child: Container(
         clipBehavior: Clip.hardEdge,
-        decoration: BoxDecoration(borderRadius: BorderRadius.circular(20)),
+        decoration: BoxDecoration(borderRadius: BorderRadius.circular(10)),
         constraints: const BoxConstraints(maxWidth: 430, maxHeight: 932),
         child: MaterialApp(
           debugShowCheckedModeBanner: false,
